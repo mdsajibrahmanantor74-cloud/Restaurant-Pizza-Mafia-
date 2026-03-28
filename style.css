@@ -332,13 +332,25 @@ footer p {
 
 .title-on {
     text-align: center;
-    width: 350px;
+    width: 250px;
     margin: 15px auto;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #595b83;
     padding: 20px;
     border-bottom: 2px solid #060930;
     font-family: "Montserrat", sans-serif;
+
+}
+
+.title-cpz {
+    text-align: center;
+    width: auto;
+    margin: 15px auto;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #e63946;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
 
 }
 
@@ -515,6 +527,16 @@ form select {
 
     /* Page-2 Order now  */
 
+    .title-on {
+        width: 350px;
+        font-size: 3rem;
+    }
+
+    .title-cpz {
+        width: auto;
+        font-size: 1.5rem;
+    }
+
     form input,
     form select {
         width: 40%;
@@ -523,11 +545,13 @@ form select {
         border-radius: 8px;
         border: 1px solid #ccc;
     }
+
     .submit-btn {
         width: 30%;
         font-size: 2rem;
         padding: 10px;
     }
+
     .size-box {
         width: 40%;
     }
