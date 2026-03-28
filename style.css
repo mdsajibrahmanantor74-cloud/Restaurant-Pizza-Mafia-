@@ -354,8 +354,7 @@ footer p {
 
 }
 
-form input,
-form select {
+form input,form select {
     width: 50%;
     padding: 10px;
     margin: 8px auto;
@@ -477,6 +476,7 @@ form select {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
+
     .logo-div {
         text-align: left;
     }
