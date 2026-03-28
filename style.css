@@ -17,7 +17,7 @@ html {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 100%;
     margin: auto;
 }
 
@@ -47,6 +47,7 @@ html {
     width: 120px;
     margin-top: 0;
 }
+
 
 /* Header design start from hare  */
 header {
@@ -126,6 +127,8 @@ nav ul li a:hover {
     border-radius: 50px;
 }
 
+/* Button start  */
+
 .btn {
     width: 150px;
     padding: 10px;
@@ -143,6 +146,8 @@ nav ul li a:hover {
 .btn:hover {
     transform: scale(1.2);
 }
+
+/* button end  */
 
 /* Banner design end hare  */
 
@@ -303,6 +308,106 @@ footer p {
 
 /* Footer design End here  */
 
+/* Page-2 order-from */
+
+/* Main design start here */
+/* Form */
+.modal-content {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    width: 350px;
+    margin: 15px auto;
+    font-size: 3rem;
+    background: #0B0B0B;
+    color: #FFD166;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: "Handlee", cursive;
+    border: 6px dotted #e63946;
+
+}
+
+.title-on {
+    text-align: center;
+    width: 350px;
+    margin: 15px auto;
+    font-size: 3rem;
+    color: #595b83;
+    padding: 20px;
+    border-bottom: 2px solid #060930;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+form input,
+form select {
+    width: 50%;
+    padding: 10px;
+    margin: 8px auto;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.size-box {
+    display: inline-block;
+    background: #f5f5f5;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.size-box:hover {
+    background: #ffe0cc;
+}
+
+/* checkbox spacing */
+.size-box input {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+/* when checked */
+.size-box input:checked+span {
+    font-weight: bold;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #ff4d4d;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 40%;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 20px;
+    transition: 0.4s;
+}
+
+.submit-btn:hover {
+    transform: scale(1.2);
+    box-shadow: 4px 4px 3px gray;
+}
+
+/* Main design End here */
+
+/* Footer design Start here */
+.footer-2 {
+    padding: 1%;
+    color: white;
+    background-color: #060930;
+    margin-top: 10%;
+}
+
+/* Main design End here */
+
+
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media (min-width: 576px) {
 
@@ -407,6 +512,26 @@ footer p {
     }
 
     /* Footer End  */
+
+    /* Page-2 Order now  */
+
+    form input,
+    form select {
+        width: 40%;
+        padding: 10px;
+        margin: 8px auto;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+    .submit-btn {
+        width: 30%;
+        font-size: 2rem;
+        padding: 10px;
+    }
+    .size-box {
+        width: 40%;
+    }
+
     .col-md-1 {
         width: 8.33%;
     }
