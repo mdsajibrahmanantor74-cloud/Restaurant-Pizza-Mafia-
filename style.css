@@ -371,6 +371,7 @@ form input,form select {
     cursor: pointer;
     transition: 0.3s;
     border: 2px solid transparent;
+    width: 25%;
 }
 
 .size-box:hover {
@@ -421,6 +422,9 @@ form input,form select {
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media (min-width: 576px) {
+    .size-box{
+        padding: 10px;
+    }
 
     .col-sm-1 {
         width: 8.33%;
