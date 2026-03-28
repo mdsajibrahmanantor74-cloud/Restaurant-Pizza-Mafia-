@@ -55,31 +55,62 @@
 
             <form
               id="orderForm"
-              action="https://formspree.io/f/mojnjndw"
+              action="https://formspree.io/f/xgopolpd"
               method="post"
             >
-              <input type="text" placeholder="Your Name" required /><br />
-              <input type="tel" placeholder="Phone Number" required /> <br />
-              <input type="text" placeholder="Address" required /> <br />
-
-              <select required>
-                <option>Select Pizza</option>
-                <option>Meat Lovers</option>
-                <option>Pizza-E-Mughal</option>
-                <option>Prawn Hub</option>
-                <option>Pablo Escober</option>
-                <option>Little One</option>
-                <option>Meatball Mania</option>
-                <option>Cheese Rush</option>
-                <option>Star Boy</option>
-                <option>Pizza Maxicana</option>
-                <option>BBQ Blust</option>
-                <option>Savage Sausage</option>
-                <option>Le Pepperoni</option>
-                <option>Margherita</option>
-                <option>Mushroom Rush</option>
-                <option>Pizza Paglis</option>
-              </select>
+              <div>
+                <label for="fullname"></label>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  name="fullname"
+                  id="name"
+                  required
+                />
+              </div>
+              <br />
+              <div>
+                <label for="phone"></label>
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  name="phone"
+                  id="phone"
+                  required
+                />
+              </div>
+              <br />
+              <div>
+                <label for="address"></label>
+                <input
+                  type="text"
+                  placeholder="Address"
+                  name="address"
+                  id="address"
+                  required
+                />
+              </div>
+              <div>
+                <label for="pizza-name"></label>
+                <select name="pizza-name" id="pizza-name">
+                  <option>Select Pizza</option>
+                  <option>Meat Lovers</option>
+                  <option>Pizza-E-Mughal</option>
+                  <option>Prawn Hub</option>
+                  <option>Pablo Escober</option>
+                  <option>Little One</option>
+                  <option>Meatball Mania</option>
+                  <option>Cheese Rush</option>
+                  <option>Star Boy</option>
+                  <option>Pizza Maxicana</option>
+                  <option>BBQ Blust</option>
+                  <option>Savage Sausage</option>
+                  <option>Le Pepperoni</option>
+                  <option>Margherita</option>
+                  <option>Mushroom Rush</option>
+                  <option>Pizza Paglis</option>
+                </select>
+              </div>
 
               <h3 class="title-cpz">Choose Pizza Size:</h3>
 
