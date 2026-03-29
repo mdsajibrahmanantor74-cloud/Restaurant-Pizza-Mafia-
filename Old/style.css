@@ -15,9 +15,6 @@ html {
     box-sizing: border-box;
 
 }
-body {
-  overflow-y: scroll;
-}
 
 .container {
     max-width: 100%;
@@ -44,10 +41,10 @@ body {
 }
 
 .dotted-hr {
-    border: dotted 6px white;
+    border: dotted 6px black;
     border-bottom: none;
     margin: 20px auto;
-    width: 150px;
+    width: 120px;
     margin-top: 0;
 }
 
@@ -69,18 +66,8 @@ header {
     border: 1.5px solid #FFD166;
 }
 
-
-
-nav ul {
-    text-align: center;
-    gap: 20px;
-    list-style: none;
-
-}
-
 nav ul li {
     display: block;
-
 }
 
 nav ul li a {
@@ -100,8 +87,6 @@ nav ul li a:hover {
     background-color: #e63946;
 
 }
-
-
 
 /* Header design end hare  */
 
@@ -155,29 +140,10 @@ nav ul li a:hover {
     cursor: pointer;
     transition: 0.4s;
     font-family: "Roboto", sans-serif;
-    margin: 3%;
 
 }
+
 .btn:hover {
-    transform: scale(1.2);
-}
-
-.btn-om {
-    width: 100px;
-    padding: 10px;
-    font-size: .8rem;
-    border: none;
-    border-radius: 10px;
-    background-color: #E63946;
-    color: #FFFFFF;
-    cursor: pointer;
-    transition: 0.4s;
-    font-family: "Roboto", sans-serif;
-    margin: 5%;
-
-}
-
-.btn-om:hover {
     transform: scale(1.2);
 }
 
@@ -185,108 +151,9 @@ nav ul li a:hover {
 
 /* Banner design end hare  */
 
-
-/* Pizza menu design Start from here */
-body {
-    font-family: "Montserrat", sans-serif;
-    background: #bbb;
-}
-
-.menu-title {
-    text-align: center;
-    margin: 40px 0 20px;
-    font-size: 2rem;
-    color: black;
-    border-bottom: 5px dotted #ff4d4d;
-    font-weight: bold;
-    font-family: "Handlee", cursive;
-
-}
-
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    text-align: justify;
-}
-
-.menu-card {
-    background: #f1f1f1;
-    padding: 15px;
-    border-radius: 15px;
-    transition: 0.3s;
-}
-
-.menu-card:hover {
-    transform: translateY(-5px);
-    background: #ffe0cc;
-    transform: scale(1.1);
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
-
-
-}
-
-.card-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu-info {
-    width: 65%;
-}
-
-.menu-info h3 {
-    color: #e63946;
-    margin-bottom: 10px;
-}
-
-.menu-info ul {
-    list-style: none;
-    padding: 0;
-}
-
-.menu-info li {
-    border-bottom: 1px dashed #bbb;
-    padding: 5px 0;
-}
-
-.menu-image {
-    width: 35%;
-    text-align: center;
-}
-
-.menu-image img {
-    width: 100%;
-    max-width: 110px;
-    transition: 0.3s;
-}
-
-.menu-card:hover img {
-    transform: scale(1.1) rotate(5deg);
-
-}
-.menu-list {
-  list-style: none;
-  padding: 0;
-}
-
-.menu-list li {
-  display: flex;
-  justify-content: space-between;
-  padding: 6px 0;
-  border-bottom: 1px dashed #bbb;
-  font-size: 0.95rem;
-}
-
-
 /* About us design Start hare  */
 #about-us {
     padding: 1%;
-    background-color: #595b83;
-    color: white;
-
 
 }
 
@@ -306,11 +173,91 @@ body {
     margin-bottom: 10px;
 }
 
+/* About us design end hare  */
+
+/* Pizza menu design Start from here */
+#pizza-menu {
+    padding: 1%;
+}
+
+.card-body {
+    text-align: center;
+}
+
+/* .card-body img{
+    max-width: 100%;
+    height: auto;
+    border: 20px solid rgb(165,164,164);
+    display: block;
+    border-bottom: none;
+    background-color: rgba(0,0,0,0.5);
+} */
+.item-desc {
+
+    background-color: #e63946;
+}
+
+.item-name {
+    background: #0B0B0B;
+    color: #FFD166;
+    padding: 10px;
+    font-size: 2rem;
+    font-family: "Handlee", cursive;
+
+}
+
+.item-desc>p {
+    font-size: 1.5rem;
+    padding: 5%;
+    font-weight: bold;
+}
+
+.card {
+    transition: 0.4s;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Pizza menu design end here */
+
+/* others menu design Strat from here */
+#others-menu {
+    padding: 1%;
+}
+
+.item-desc-om {
+
+    background-color: #e63946;
+    text-align: justify;
+}
+
+.item-desc-om>p {
+    font-size: 1rem;
+    padding: 5%;
+    font-weight: bold;
+}
+
+/* others menu design end here */
+
 /* Contact design start from here */
+#contact {
+    padding: 1%;
+    background-color: #595b83;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
 
 .contact-details {
     color: white;
-    text-align: right;
+    text-align: center;
     padding: 20px 0;
 }
 
@@ -321,15 +268,6 @@ address {
 
 /* Contact design end here */
 
-/* About us design end hare  */
-
-/* maps start  */
-.map {
-    width: 100%;
-    height: 100%;
-}
-
-/* maps End  */
 /* Footer design strat here  */
 footer {
     padding: 1%;
@@ -416,8 +354,7 @@ footer p {
 
 }
 
-form input,
-form select {
+form input,form select {
     width: 50%;
     padding: 10px;
     margin: 8px auto;
@@ -483,16 +420,9 @@ form select {
 /* Main design End here */
 
 
-/* Small devices (portrait tablets and large phones, 360px and up) */
-@media (min-width: 360px) {
-
-    .contact-details {
-
-        text-align: center;
-    }
-
-
-    .size-box {
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media (min-width: 576px) {
+    .size-box{
         padding: 10px;
     }
 
@@ -729,44 +659,6 @@ form select {
     }
 
     /* bannar desing End  */
-
-    /* Footer start  */
-    footer p {
-        text-align: left;
-    }
-
-    .social-menus {
-        text-align: right;
-    }
-
-    /* Footer End  */
-
-    /* Page-2 Order now  */
-
-    .title-on {
-        width: 350px;
-        font-size: 3rem;
-    }
-
-    .title-cpz {
-        width: auto;
-        font-size: 1.5rem;
-    }
-
-    form input,
-    form select {
-        width: 40%;
-        padding: 10px;
-        margin: 8px auto;
-        border-radius: 8px;
-        border: 1px solid #ccc;
-    }
-
-    .submit-btn {
-        width: 30%;
-        font-size: 2rem;
-        padding: 10px;
-    }
 
     /* Large screen column width */
     .col-lg-1 {
