@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Order form</title>
+    <link rel="icon" type="image/png" href="images/logo.png" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Incon-Font Awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Font-Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="cotainer">
+      <!-- Header Section Strat from here  -->
+      <header>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="logo-div">
+              <a href="#">
+                <img class="logo" src="images/logo.png" alt="Logo" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#contact">contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- Header Section end here  -->
+      <h1 class="title">Pizza Mafia</h1>
+
+      <!-- Main section start here  -->
+      <main>
+        <div id="orderModal" class="modal">
+          <div class="modal-content">
+            <h2 class="title-on">Order Now</h2>
+
+            <form
+              id="orderForm"
+              action="https://formspree.io/f/xgopolpd"
+              method="post"
+            >
+              <div>
+                <label for="fullname"></label>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  name="fullname"
+                  id="name"
+                  required
+                />
+              </div>
+              <br />
+              <div>
+                <label for="phone"></label>
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  name="phone"
+                  id="phone"
+                  required
+                />
+              </div>
+              <br />
+              <div>
+                <label for="address"></label>
+                <input
+                  type="text"
+                  placeholder="Address"
+                  name="address"
+                  id="address"
+                  required
+                />
+              </div>
+              <div>
+                <label for="Fries-Appetizer-name"></label>
+                <select name="Fries-Appetizer-name" id="Fries-Appetizer-name">
+                  <option>Select Fries or Appetizer</option>
+                  <option>French Fry</option>
+                  <option>Chicken Wings-6pcs</option>
+                  <option>Chicken Wings-12pcs</option>
+                  <option>Chicken Fry-4pcs</option>
+                  <option>Chicken Fry-8pcs</option>
+                </select>
+              </div>
+              <br />
+              <button type="submit" class="submit-btn">Place Order</button>
+            </form>
+          </div>
+        </div>
+      </main>
+      <!-- Main section end here  -->
+
+      <!-- Footer Section Strat from here  -->
+      <footer class="footer-2" id="contact">
+        <div class="row">
+          <div class="col-lg-4">
+            <p>&copy; All right reserved by Pizza Mafia</p>
+          </div>
+          <div class="col-lg-4" style="text-align: center">
+            <address>Monwar Complex, Thana Stand, Dhamrai, Dhaka</address>
+            <div>
+              <p style="text-align: center">01969255266</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="social-menus">
+              <a href="#" class="icon-style"><i class="fa fa-toggle-up"></i></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61565744823187&mibextid=zbwkwl"
+                target="_blank"
+                class="icon-style"
+                ><i class="fa fa-facebook-official"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/pizzamafia.id/"
+                target="_blank"
+                class="icon-style"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer Section End here  -->
+    </div>
+  </body>
+</html>
